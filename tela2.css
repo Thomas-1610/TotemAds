@@ -71,8 +71,8 @@ body {
     background: #FFFFFE;
     display: flex;
     flex-direction: column;
-    padding: 3vh;
-    width: 22%;
+    padding: 1vh;
+    width: auto;
     height: auto;
     box-shadow: 5px 0 20px rgba(159, 159, 159, 0.2);
 }
@@ -88,18 +88,29 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    height: 11vh;
+    width: 11vh;
 }
 .menu-item:hover {
     background: #DEF05F;
+    padding: 1.1vh;
+    transition: 0.3s;
 }
 .menu-item img {
-    width: 135%;
+    width: 73%;
     height: auto;
     margin-bottom: 0.5vh;
 }
 .menu-item div {
     font-size: 1.5vh;
     text-align: center;
+
+    color: #3F3F3F;
+
+
+
+
 }
 .content {
     padding: 0vh 0vh 0px 1.5vh;
@@ -179,6 +190,8 @@ body {
 
 
 
+
+
 .container-categoria {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -201,8 +214,8 @@ body {
 }
 
 .nav-categorias a {
-    margin: 1vh 2vh 1vh 2vh;
-    padding: 1vh 3vh 1vh 3vh;
+    margin: 1vh 0.5vh 1vh 0.5vh;
+    padding: 1vh 1vh 1vh 1vh;
     color: #3F3F3F;
     text-align: center;
     font-size: 2vh;
@@ -210,14 +223,20 @@ body {
     font-weight: 400;
     line-height: normal;
     text-decoration: none;
-    border-radius: 2vh;
+    border-radius: 1.5vh;
+}
+
+.nav-categorias a:hover {
+    background-color: rgb(138, 215, 138);
+    color: white;
+    transition: 0.5s;
 }
 
 a{
     width: 13vh;
 }
 
-.nav-categorias a:focus, .nav-categorias a.active {
-    color: #A3CF3B;
-    border:0.4vh solid #A3CF3B;
+.nav-categorias a:focus, .nav-categorias a:active, .nav-categorias a.active {
+    color: rgb(255, 255, 255);
+    border: 0.4vh solid rgb(140, 204, 140);
 }
